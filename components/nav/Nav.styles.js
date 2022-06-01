@@ -33,10 +33,8 @@ export const TopNavContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   top: 0;
   z-index: 2;
-  background: green;
-  position: absolute;
+  background: ${({theme}) => theme.background1};
   top: 0;
 `;

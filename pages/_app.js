@@ -1,18 +1,15 @@
-import { ThemeProvider } from "styled-components";
 import { Layout } from "../components/Layout";
 import "../styles/globals.css";
-ThemeProvider;
+import { Theme, ThemeWrapper } from "../context/themeState";
 
 function MyApp({ Component, pageProps }) {
 
-  const theme = 
-  
   return (
-    <ThemeProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps}></Component>
-      </Layout>
-    </ThemeProvider>
+    <ThemeWrapper>
+        <Layout>
+          <Component {...pageProps}></Component>
+        </Layout>
+    </ThemeWrapper>
   );
 }
 
