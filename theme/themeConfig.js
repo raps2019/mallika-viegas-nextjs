@@ -1,6 +1,8 @@
 const themes = {
   light: {
-    background1: "rgba(255,255,255)",
+    linkHighlight: "#FFC286",
+    navBackground: "#ffffff",
+    background: "#f0efeb",
     formBackground: "rgba(242, 242, 242,1)",
     aboutCardBackground: "rgba(255,255,255,0.90)",
     accent1: "rgba(255, 175, 104,0.90)",

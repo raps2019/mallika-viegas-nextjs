@@ -10,21 +10,32 @@ const TopNav = () => {
     <Styled.TopNavContainer>
       <Link href="/">
         <Styled.NavLink className={router.pathname == "/" ? "active" : ""}>
-          Home
+          Mallika Viegas
         </Styled.NavLink>
       </Link>
-      <Link href="/about">
-        <Styled.NavLink className={router.pathname == "/about" ? "active" : ""}>
-          About
-        </Styled.NavLink>
-      </Link>
-      <Link href="/contact">
-        <Styled.NavLink
-          className={router.pathname == "/contact" ? "active" : ""}
-        >
-          Contact
-        </Styled.NavLink>
-      </Link>
+      <Styled.RightNavContainer>
+        <Link href="/work">
+          <Styled.NavLink
+            className={router.pathname == "/work" ? "active" : ""}
+          >
+            Work
+          </Styled.NavLink>
+        </Link>
+        <Link href="/about">
+          <Styled.NavLink
+            className={router.pathname == "/about" ? "active" : ""}
+          >
+            About
+          </Styled.NavLink>
+        </Link>
+        <Link href="/contact">
+          <Styled.NavLink
+            className={router.pathname == "/contact" ? "active" : ""}
+          >
+            Contact
+          </Styled.NavLink>
+        </Link>
+      </Styled.RightNavContainer>
     </Styled.TopNavContainer>
   );
 };

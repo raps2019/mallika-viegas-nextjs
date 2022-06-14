@@ -1,7 +1,8 @@
 import React from "react";
+import TopNav from "./TopNav";
 
 const Nav = () => {
-  return <div></div>;
+  return <TopNav />;
 };
 
 export default Nav;

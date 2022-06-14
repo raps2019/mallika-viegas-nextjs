@@ -1,13 +1,14 @@
 import React from "react";
 import Footer from "./Footer";
-import TopNav from "./nav/TopNav";
+import * as Styled from "./Layout.styles";
+import Nav from "./nav/Nav";
 
 export const Layout = ({ children }) => {
   return (
-    <div>
-      <TopNav />
-      {children}
+    <Styled.LayoutContainer>
+      <Nav />
+      <Styled.PageContainer>{children}</Styled.PageContainer>
       <Footer />
-    </div>
+    </Styled.LayoutContainer>
   );
 };

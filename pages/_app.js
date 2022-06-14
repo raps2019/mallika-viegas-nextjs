@@ -1,6 +1,6 @@
 import { Layout } from "../components/Layout";
 import "../styles/globals.css";
-import { Theme, ThemeWrapper } from "../context/themeState";
+import { Theme, ThemeWrapper } from "../context/themeContext";
 
 function MyApp({ Component, pageProps }) {
 
